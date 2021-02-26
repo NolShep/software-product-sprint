@@ -17,7 +17,8 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['I moved 4 times before going to college', 'I love baking', 'I play on the club spikeball team here at Syraucse Univ.',
+    'I have 20+ wins on Warzone','I like hiking and cliff jumping'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +26,18 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+}
+
+function addRandomfood(){
+    //list of foods
+    const foods = ['Korean Meatballs', ' Chicken & Rice', 'Eggs Benedict'
+, 'Steak & Potatoes','Mac & Cheese','Beef & Chicken Enchiladas', 'Fried Rice',
+'Chorizo & Eggs & Potatoes' ]
+
+//Picking random food from foods list
+const food = foods[Math.floor(Math.random() * foods.length)];
+
+//adding to the html
+const foodContainer = document.getElementById('food-container');
+  foodContainer.innerText = food;
 }
